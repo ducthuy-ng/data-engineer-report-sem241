@@ -1,0 +1,53 @@
+% ==========================================================
+% Preamble
+% ==========================================================
+\documentclass[a4paper, 12pt]{article}
+% \usepackage[utf8]
+
+\usepackage{graphicx}
+\usepackage[
+ left=17mm,
+ right=17mm,
+ top=20mm,
+ textheight=700pt]{geometry}        % Custom margin
+\usepackage{lastpage}
+
+% \usepackage[american]{babel}
+\usepackage[backend=biber]{biblatex}   % Bibliography Manager
+\usepackage{csquotes}
+
+\addbibresource{citation.bib}
+% \DeclareLanguageMapping{american}{american-apa}
+% \def\printdateextralabel{\printlabeldateextra}
+
+\usepackage{import}                 % Allow importing other LaTeX files
+\usepackage{parskip}                % Cleaner paragraph indentation
+\usepackage{fancyhdr}               % Custom header
+\usepackage{datetime}               % Datetime supports
+
+% Make index page
+% Visit for details: https://www.overleaf.com/learn/latex/Indices
+\usepackage{imakeidx}
+\makeindex
+
+\import{libraries}{header_footer}
+
+% Change "Mục lục" to "Nội dung"
+% \AtBeginDocument{\renewcommand*\contentsname{Nội dung}}
+
+% ==========================================================
+% Main page
+% ==============================`'============================
+\begin{document}
+\import{libraries}{title_page}
+
+\newpage
+\tableofcontents
+\newpage
+
+
+\newpage
+\printbibliography
+
+\printindex
+\end{document}
