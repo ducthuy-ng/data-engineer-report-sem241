@@ -2,7 +2,7 @@
     "image": "mcr.microsoft.com/devcontainers/base:1.0-bookworm",
     "features": {
         "ghcr.io/prulloac/devcontainer-features/latex:1": {
-            "packages": "biber,biblatex,lastpage,csquotes,minted,import,fancyhdr,imakeidx,parskip,datetime,fmtcount,xkeyval"
+            "packages": "biber,biblatex,lastpage,csquotes,minted,import,fancyhdr,imakeidx,parskip,datetime,fmtcount,xkeyval,listings"
         }
     }
 }
