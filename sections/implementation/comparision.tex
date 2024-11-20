@@ -1,5 +1,23 @@
 \subsection{Comparing between the solutions}
-
+\subsubsection{Overall comparison}
+\begin{center}
+\begin{tabular}{ |p{1in}|p{2.5in}|p{2.5in}| } 
+ \hline
+ Feature & Apache Spark & Google BigQuery \\
+ \hline
+ Ease of Setup&Requires setup and management of clusters, along with programming expertise 	 & Fully managed and easier to use. Ingestion can be performed with simple commands or UI interfaces, and no infrastructure management is required. \\
+ \hline
+ Scalability	 & Horizontal scaling via clusters. Users control how resources are allocated, enabling optimization for large datasets.	 & Automatic scaling to handle large workloads without requiring manual configuration.\\ 
+ \hline
+ Data Transformation& Highly flexible and allows extensive transformations during ingestion using customized code.	&Supports lightweight data transformation using SQL-based ETL processes\\
+\hline
+Integration&Compatible with diverse ecosystems&	Deep integration with Google Cloud ecosystem\\
+\hline
+Performance&Optimized for iterative and complex workflows&Optimized for fast, scalable ingestion and query execution. \\
+\hline
+\end{tabular}
+\end{center}
+To sum up,  Spark offers flexibility and control for diverse use cases, especially in iterative workflow, while BigQuery excels in ease of use and integration with Google Cloud services, makes it convenient for organizations already in the Google ecosystem.
 \subsubsection{Overall cost}
 The economic dimension of technological implementation represents a critical factor in contemporary
 data engineering project design, particularly during experimental and pre-production stages of
